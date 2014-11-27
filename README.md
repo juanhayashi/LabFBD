@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INSTRUCCIONES
 ========================================
 Como prometí, acá está el código donde se permite hacer identificación de usuarios y además permite imprimir un stream de 10 tweets con los temas "The beatles" y "Pink Floyd".
@@ -25,3 +26,9 @@ Instrucciones para poder ver la aplicación web:
 
 PD: Recuerden que en app/views/controllers/welcome_controller deben ingresar sus credenciales de twitter, creando la app como les enseñé.
 
+=======
+LabFBD
+======
+
+Laboratorio FBD
+>>>>>>> b49f9fdf0f27cae7115cda82c8ba50cc27edce2f

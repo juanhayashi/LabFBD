@@ -1,0 +1,27 @@
+<h1>Listing tusuarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Mensaje</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tusuarios.each do |tusuario| %>
+      <tr>
+        <td><%= tusuario.username %></td>
+        <td><%= tusuario.mensaje %></td>
+        <td><%= link_to 'Show', tusuario %></td>
+        <td><%= link_to 'Edit', edit_tusuario_path(tusuario) %></td>
+        <td><%= link_to 'Destroy', tusuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tusuario', new_tusuario_path %>

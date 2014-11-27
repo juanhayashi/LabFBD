@@ -1,0 +1,27 @@
+<h1>Listing tw_usuarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Mensaje</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tw_usuarios.each do |tw_usuario| %>
+      <tr>
+        <td><%= tw_usuario.username %></td>
+        <td><%= tw_usuario.mensaje %></td>
+        <td><%= link_to 'Show', tw_usuario %></td>
+        <td><%= link_to 'Edit', edit_tw_usuario_path(tw_usuario) %></td>
+        <td><%= link_to 'Destroy', tw_usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tw usuario', new_tw_usuario_path %>
